@@ -7,7 +7,11 @@ public class StringToInt{
   }
 
   public static int stringToInt(String s){
-    return 0;
+    int sum = 0;
+    for (int x = 0; x < s.length() ; x--){
+      sum += sum + (charToInt(s.charAt(s.length() - x)) * Math.pow(10, x));
+    }
+    return sum;
   }
 
   public static int charToInt(char input){
