@@ -35,13 +35,6 @@ public class StringToInt{
       //System.out.println(charToInt(s.charAt(s.length() - x - 1)));
       index = s.charAt(x);
       //System.out.println(sum);
-      //-------------------Need to work on how to detect larger int ------------
-      /*if ((sum += charToInt(index) * Math.pow(10, indexstop - x - 1)) >
-       Integer.MAX_VALUE ||
-       (sum += charToInt(index) * Math.pow(10, indexstop - x - 1)) <
-       Integer.MIN_VALUE) {
-        throw new NumberFormatException("Not a Number");
-      }*/
       sum += charToInt(index) * Math.pow(10, indexstop - x - 1);
     }
     return sum * switcher;
